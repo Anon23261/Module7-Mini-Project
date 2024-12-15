@@ -35,87 +35,93 @@ setInterval(drawMatrix, 35);
 // Project data
 const projects = [
     {
-        title: "Vulnerability Scanner Pro",
-        description: "Enterprise-grade web application vulnerability scanner featuring automated penetration testing, detailed reporting, and compliance checking. Implements OWASP Top 10 security checks and CVE database integration.",
-        technologies: ["Python", "Selenium", "SQLite", "OWASP ZAP API", "Docker"],
+        title: "GhostC OS",
+        description: "A custom operating system kernel developed from scratch, demonstrating low-level system programming expertise. Features include basic memory management, process scheduling, and hardware interactions. This project showcases my passion for kernel development and systems programming.",
+        technologies: ["C", "Assembly", "Operating Systems", "Kernel Development", "System Architecture"],
         features: [
-            "Automated vulnerability assessment",
-            "Custom security rule creation",
-            "PDF report generation",
-            "Real-time monitoring dashboard"
+            "Custom bootloader implementation",
+            "Memory management system",
+            "Basic process scheduling",
+            "Hardware abstraction layer",
+            "System calls implementation"
         ],
-        image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        link: "https://github.com/Anon23261/vulnerability-scanner",
+        image: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        link: "https://github.com/Anon23261/Official-ghostC-OS",
+        category: "systems"
+    },
+    {
+        title: "Network Scanner",
+        description: "A robust network scanning tool built with security in mind. This tool demonstrates my understanding of network protocols and security principles, allowing for comprehensive network analysis and vulnerability assessment.",
+        technologies: ["Python", "Networking", "Security", "Scapy", "Socket Programming"],
+        features: [
+            "Port scanning capabilities",
+            "Network device discovery",
+            "Service enumeration",
+            "Basic vulnerability detection",
+            "Network mapping"
+        ],
+        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        link: "https://github.com/Anon23261/NetworkScanner",
         category: "security"
     },
     {
-        title: "SecureShop E-Commerce",
-        description: "Full-stack e-commerce platform with advanced security features including fraud detection, secure payment processing, and PCI compliance. Implements OAuth2.0 and JWT for authentication.",
-        technologies: ["React", "Node.js", "MongoDB", "Redis", "Stripe API", "Docker"],
+        title: "Mini Code Editor",
+        description: "A lightweight code editor built as part of my full-stack development journey. Features syntax highlighting and basic text editing capabilities, demonstrating front-end development skills and UI/UX design principles.",
+        technologies: ["JavaScript", "HTML", "CSS", "CodeMirror", "Web APIs"],
         features: [
-            "Role-based access control",
-            "Real-time inventory tracking",
-            "Secure payment processing",
-            "Analytics dashboard"
+            "Syntax highlighting",
+            "Basic text editing",
+            "File management",
+            "Theme customization",
+            "Keyboard shortcuts"
         ],
-        image: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        link: "https://github.com/Anon23261/secure-shop",
+        image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        link: "https://github.com/Anon23261/mini-code-editor",
         category: "fullstack"
     },
     {
-        title: "CryptoChat Messenger",
-        description: "End-to-end encrypted messaging application with secure file sharing and self-destructing messages. Features military-grade encryption and zero-knowledge architecture.",
-        technologies: ["Node.js", "Socket.io", "PostgreSQL", "AES-256", "WebRTC"],
+        title: "C++ Learning Projects",
+        description: "A collection of C++ projects demonstrating my progression in systems programming and algorithm implementation. These projects showcase my understanding of low-level programming concepts and data structures.",
+        technologies: ["C++", "Data Structures", "Algorithms", "STL", "Memory Management"],
         features: [
-            "End-to-end encryption",
-            "Secure file sharing",
-            "Self-destructing messages",
-            "Audit logging"
+            "Custom data structures",
+            "Algorithm implementations",
+            "Memory management examples",
+            "Performance optimization",
+            "Best practices demonstration"
         ],
-        image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        link: "https://github.com/Anon23261/crypto-chat",
-        category: "security"
+        image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        link: "https://github.com/Anon23261/Hello-World-C-",
+        category: "systems"
     },
     {
-        title: "DevSecOps Pipeline",
-        description: "Automated CI/CD pipeline with integrated security scanning, dependency checking, and compliance monitoring. Includes custom security policies and automated remediation.",
-        technologies: ["Jenkins", "Docker", "Kubernetes", "Terraform", "SonarQube"],
+        title: "Front-End Portfolio",
+        description: "A showcase of my front-end development skills as part of my full-stack education. This project demonstrates my ability to create responsive, modern web interfaces with clean and maintainable code.",
+        technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Web APIs"],
         features: [
-            "Automated security testing",
-            "Container security scanning",
-            "Infrastructure as Code",
-            "Compliance reporting"
+            "Responsive layouts",
+            "Modern CSS techniques",
+            "Interactive components",
+            "Performance optimization",
+            "Cross-browser compatibility"
         ],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        link: "https://github.com/Anon23261/devsecops-pipeline",
-        category: "security"
-    },
-    {
-        title: "Project Management System",
-        description: "Enterprise project management platform with real-time collaboration, resource allocation, and advanced analytics. Features role-based access control and audit logging.",
-        technologies: ["Vue.js", "Django", "PostgreSQL", "Redis", "Docker", "Celery"],
-        features: [
-            "Real-time collaboration",
-            "Resource management",
-            "Advanced analytics",
-            "File versioning"
-        ],
-        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        link: "https://github.com/Anon23261/project-management",
+        image: "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        link: "https://github.com/Anon23261/Hello-World-Front-End",
         category: "fullstack"
     },
     {
-        title: "AI-Powered Analytics Platform",
-        description: "Full-stack analytics platform using machine learning for predictive insights and data visualization. Features real-time data processing and custom dashboard creation.",
-        technologies: ["React", "Python", "TensorFlow", "PostgreSQL", "Redis", "Docker"],
+        title: "Weather Dashboard",
+        description: "A full-stack weather application showcasing API integration, data visualization, and modern web development practices. Built as part of my full-stack development coursework.",
+        technologies: ["React", "Node.js", "Express", "Weather API", "Chart.js"],
         features: [
-            "Predictive analytics",
-            "Custom dashboards",
-            "Data visualization",
-            "Automated reporting"
+            "Real-time weather data",
+            "Interactive charts",
+            "Location-based services",
+            "Responsive design",
+            "API integration"
         ],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        link: "https://github.com/Anon23261/analytics-platform",
+        image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        link: "https://github.com/Anon23261/Module6-Mini-Project",
         category: "fullstack"
     }
 ];
@@ -139,25 +145,27 @@ function filterProjects(category) {
     const filteredProjects = category === 'all' 
         ? projects 
         : projects.filter(project => project.category === category);
-    
+
     filteredProjects.forEach(project => {
         const projectCard = document.createElement('div');
-        projectCard.className = 'terminal-box project-card';
+        projectCard.className = 'project-card terminal-box';
         projectCard.innerHTML = `
-            <img src="${project.image}" alt="${project.title}" onerror="this.src='https://via.placeholder.com/300x200'">
-            <h3>> ${project.title}</h3>
-            <p class="project-description">${project.description}</p>
-            <div class="project-features">
+            <div class="project-header">
+                <h3>> ${project.title}</h3>
+            </div>
+            <img src="${project.image}" alt="${project.title}">
+            <div class="project-content">
+                <p>${project.description}</p>
                 <h4>> Key Features:</h4>
                 <ul>
                     ${project.features.map(feature => `<li>${feature}</li>`).join('')}
                 </ul>
-            </div>
-            <div class="technologies">
                 <h4>> Tech Stack:</h4>
-                ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                <div class="tech-stack">
+                    ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                </div>
+                <a href="${project.link}" class="btn primary" target="_blank">View Project <i class="fas fa-code-branch"></i></a>
             </div>
-            <a href="${project.link}" class="btn primary" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
         `;
         projectsGrid.appendChild(projectCard);
     });
@@ -188,10 +196,15 @@ function populateProjects() {
 
 // Handle contact form submission
 document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const formData = new FormData(this);
-    alert('Message received. Establishing secure connection...');
-    this.reset();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    // Format the email body
+    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+    
+    // Update the mailto link with the formatted body
+    this.action = `mailto:ghostsector@icloud.com?subject=Portfolio Contact from ${name}&body=${body}`;
 });
 
 // Smooth scrolling for navigation
