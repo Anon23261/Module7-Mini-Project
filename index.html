@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost - Cybersecurity Professional & Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="matrix-rain" class="matrix-bg"></canvas>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#">GhostSec</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="terminal-box">
+                <h1>Hello, World! I'm Ghost</h1>
+                <p>Cybersecurity Professional | Full Stack Developer</p>
+                <p class="typing-text">Securing the digital frontier, one line of code at a time.</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Initialize Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>> About_Me</h2>
+        <div class="about-content terminal-box">
+            <p>Owner of Ghost Sec and passionate about cybersecurity and full-stack development. Currently expanding my expertise at Coding Temple, focusing on secure application development and penetration testing.</p>
+            <p>Mission: To bridge the gap between security and development, creating robust and secure web applications.</p>
+            <div class="terminal-stats">
+                <p>> Location: Silicon Valley Area</p>
+                <p>> Focus: Web Security & Full Stack Development</p>
+                <p>> Status: Available for Security Consulting</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>> Featured_Projects</h2>
+        <div class="project-filters terminal-box">
+            <button class="btn filter-btn active" onclick="filterProjects('all')">All Projects</button>
+            <button class="btn filter-btn" onclick="filterProjects('security')">Security</button>
+            <button class="btn filter-btn" onclick="filterProjects('fullstack')">Full Stack</button>
+        </div>
+        <div class="projects-grid">
+            <!-- Projects will be populated via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>> Technical_Arsenal</h2>
+        <div class="skills-grid">
+            <div class="skill-category terminal-box">
+                <h3>Security Skills</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span>Penetration Testing</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Network Security</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Security Auditing</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category terminal-box">
+                <h3>Development Skills</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span>Secure Coding</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Full Stack Development</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>API Security</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>> Initialize_Contact</h2>
+        <div class="contact-content">
+            <div class="contact-info terminal-box">
+                <div class="contact-item">
+                    <i class="fas fa-terminal"></i>
+                    <p>ghostsector@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>(480) 235-3187</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/Anon23261" target="_blank">GitHub Repository</a>
+                </div>
+            </div>
+            <form id="contact-form" class="terminal-box">
+                <input type="text" placeholder="$ enter name" required>
+                <input type="email" placeholder="$ enter email" required>
+                <textarea placeholder="$ type message" required></textarea>
+                <button type="submit" class="btn primary">Execute Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ghost Sec | Secured by Design</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
